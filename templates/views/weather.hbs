@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+
+<body>
+    {{>navbar}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-md-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form" action="">
+                        <input type="text" id="cityName" autocomplete="on" placeholder="Enter Your City">
+                        <input type="submit" value="Search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInfo">
+                    <div class="topLayer">
+                        <p id="day">Friday</p>
+                        <p id="todayDate">26 July</p>
+                    </div>
+                    <div class="mainLayer">
+                        <p id="city_name"> Chandigarh</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span>0</span> <sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa-solid fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
